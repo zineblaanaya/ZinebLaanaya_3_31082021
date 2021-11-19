@@ -1,20 +1,24 @@
-@use "../utils/box-shadow.scss";
+
 @use "../utils/zoom.scss";
 @use "../utils/variables.scss";
 @use "../utils/colors.scss";
-
-
+@use "../layout/box-shadow.scss";
 
 .tuto{
     counter-reset:steps;
+    h2{
+        margin-bottom: 32px;   
+    }
+   
     & ol{
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
       
 
-        @media (max-width:10    00px){
+        @media (min-width:variables.$breakpoint){
             flex-direction: column;
+            max-width: 90%;
         }
         
     }

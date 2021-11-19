@@ -1,0 +1,41 @@
+@use "../utils/variables.scss";
+.menus {
+  background-color: #f6f6f6;
+}
+
+.menus h2 {
+  margin-bottom: 32px;
+}
+
+.menus .menus__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+@media (min-width: variables) {
+  .menus .menus__card {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+.menus .card {
+  border: 1px solid black;
+  height: 240px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.menus .card .card__image {
+  background-image: url(../../images/restaurants/menu-1.jpg);
+  height: 240px;
+}
+/*# sourceMappingURL=menus.css.map */

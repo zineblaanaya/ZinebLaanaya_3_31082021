@@ -12,7 +12,21 @@ body {
 }
 
 main {
-  padding: 0 16px;
+  padding: 0 32px;
+}
+
+h2 {
+  padding: 32px 0;
+  margin: 0;
+}
+
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -31,7 +45,7 @@ header {
   gap: 16px;
   background-color: #F3F3F3;
   text-align: center;
-  padding: 8px;
+  width: 100vw;
 }
 .city i {
   font-size: 25px;
@@ -39,10 +53,6 @@ header {
 
 .explorer {
   text-align: center;
-}
-.explorer h2 {
-  margin-top: 32px;
-  font-size: 24px;
 }
 .explorer p {
   font-size: 16px;
@@ -53,11 +63,11 @@ header {
   border-radius: 32px;
   font-size: 17px;
   color: white;
-  background: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   border: none;
   transition: transform 200ms;
   margin-top: 10px;
   box-shadow: 2px 1px 8px -3px black;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .explorer button:hover {
   transform: scale(1.02);
@@ -67,14 +77,18 @@ header {
 .tuto {
   counter-reset: steps;
 }
+.tuto h2 {
+  margin-bottom: 32px;
+}
 .tuto ol {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
-@media (max-width: 10 0px) {
+@media (min-width: 767px) {
   .tuto ol {
     flex-direction: column;
+    max-width: 90%;
   }
 }
 .tuto li {
@@ -106,6 +120,107 @@ header {
   margin-right: 16px;
   color: #949494;
   font-size: 20px;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  margin-bottom: 32px;
+}
+.menus .menus__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 120px;
+}
+@media (min-width: 767px) {
+  .menus .menus__card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.menus .menus__card .new {
+  position: relative;
+}
+.menus .menus__card .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 32px;
+  width: 70px;
+  background-color: #99E2D0;
+  color: green;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  right: 16px;
+  top: 16px;
+  border-radius: 2px;
+}
+.menus .card {
+  height: 240px;
+  flex-grow: 1;
+}
+.menus .card__image {
+  border-radius: 16px 16px 0 0;
+  height: 240px;
+  background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url(../../images/restaurants/menu-1.jpg);
+}
+.menus .card__image-2 {
+  background-image: url(../../images/restaurants/menu-2.jpg);
+}
+.menus .card__image-3 {
+  background-image: url(../../images/restaurants/menu-3.jpg);
+}
+.menus .card__image-4 {
+  background-image: url(../../images/restaurants/menu-4.jpg);
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 16px 16px;
+}
+.menus .card__description h3,
+.menus .card__description p {
+  padding: 4px;
+}
+.menus .card__description p {
+  font-weight: 100;
+}
+.menus .card__description i {
+  font-size: 30px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
+footer {
+  background-color: #353535;
+  padding: 16px 32px;
+  color: white;
+  margin-top: 80px;
+}
+footer h2 {
+  font-family: "shrikhand", sans-serif;
+  font-weight: 500;
+  padding: 16px;
+}
+footer p {
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
