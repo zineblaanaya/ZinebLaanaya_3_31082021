@@ -1,0 +1,159 @@
+@use "../utils/variables.scss";
+@use "../utils/colors.scss";
+@use "../utils/linear-gradient.scss";
+@use "../utils/zoom.scss";
+@use "../layout/box-shadow.scss";
+
+
+#homepage{
+
+
+
+.menus{
+    background-color: #f6f6f6;
+    margin-bottom: 32px;
+    
+
+
+    .menus__card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin: 15px;
+
+        .new{
+
+            position: relative;
+            
+            
+        }
+
+        .new::before{
+            content:"Nouveau";
+            position:absolute;
+            height: 32px;
+            width: 70px;
+            background-color:colors.$green;
+            color: green;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            right: 16px;
+            top: 16px;
+            border-radius: 2px;
+        }
+
+    }
+        .card {
+        height: 240px;
+        flex-grow: 1;
+
+        &__image{
+            border-radius: 16px 16px 0 0;
+            height: 50vw;
+            background-size:cover;
+        }
+
+        &__image-1{
+            background-image: url(../../images/restaurants/menu-1.jpg);
+        }
+        &__image-2{
+            background-image: url(../../images/restaurants/menu-2.jpg);
+        }
+        &__image-3{
+            background-image: url(../../images/restaurants/menu-3.jpg);
+        }
+        &__image-4{
+            background-image: url(../../images/restaurants/menu-4.jpg);
+        }
+
+        &__description{
+            position: relative;
+            background-color: white;
+            border-radius: 0 0 16px 16px;
+            
+
+            h3,
+            p{
+                padding: 4px;
+            }
+
+            p{
+                font-weight: 100;
+            }
+
+            i{
+                font-size: 30px;
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform:translateY(-50%);
+            }
+
+            .fas{
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 200ms ease-in-out;
+
+                @include linear-gradient.gradient(0.9);
+
+            }
+
+            &:hover .fas{
+                opacity: 1;
+                transform:translateY(-50%) scale(1);
+            }
+
+            
+
+
+        }
+    
+
+       }
+}
+
+}
+
+@media screen and (min-width:variables.$breakpoint){
+
+    #homepage{
+
+
+
+        .menus{
+            background-color: #f6f6f6;
+            margin-bottom: 32px;
+            
+        
+        
+            .menus__card{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 40px;
+                margin: 10px;
+
+                }
+
+                .card {
+                    height: 280px;
+                    flex-grow: 1;
+            
+                    &__image{
+                        border-radius: 16px 16px 0 0;
+                        height: 20vw;
+                        background-size:cover;
+                    }
+                    
+
+                }
+            
+
+            }
+
+    }
+}
