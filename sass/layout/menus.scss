@@ -5,27 +5,27 @@
 @use "../layout/box-shadow.scss";
 
 
+#homepage{
+
 
 
 .menus{
     background-color: #f6f6f6;
     margin-bottom: 32px;
+    
 
 
     .menus__card{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 120px;
-
-        @media(min-width:variables.$breakpoint){
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-        }
+        gap: 40px;
+        margin: 15px;
 
         .new{
 
             position: relative;
+            
             
         }
 
@@ -51,8 +51,8 @@
 
         &__image{
             border-radius: 16px 16px 0 0;
-            height: 240px;
-            background-size: cover;
+            height: 50vw;
+            background-size:cover;
         }
 
         &__image-1{
@@ -88,7 +88,7 @@
                 position: absolute;
                 right: 16px;
                 top: 50%;
-                transform:translateY(-50%)
+                transform:translateY(-50%);
             }
 
             .fas{
@@ -104,7 +104,7 @@
 
             &:hover .fas{
                 opacity: 1;
-                transform:translateY(-50%) scale(1.2);
+                transform:translateY(-50%) scale(1);
             }
 
             
@@ -116,3 +116,44 @@
        }
 }
 
+}
+
+@media screen and (min-width:variables.$breakpoint){
+
+    #homepage{
+
+
+
+        .menus{
+            background-color: #f6f6f6;
+            margin-bottom: 32px;
+            
+        
+        
+            .menus__card{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 40px;
+                margin: 10px;
+
+                }
+
+                .card {
+                    height: 280px;
+                    flex-grow: 1;
+            
+                    &__image{
+                        border-radius: 16px 16px 0 0;
+                        height: 20vw;
+                        background-size:cover;
+                    }
+                    
+
+                }
+            
+
+            }
+
+    }
+}

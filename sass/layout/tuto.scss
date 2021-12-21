@@ -6,20 +6,22 @@
 
 .tuto{
     counter-reset:steps;
-    h2{
-        margin-bottom: 32px;   
-    }
+    background: white;
+    height: 110vw;
+    padding: 25px;
+    
    
     & ol{
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
+        padding: 0;
       
 
-        @media (min-width:variables.$breakpoint){
-            flex-direction: column;
-            max-width: 90%;
-        }
+        // @media (min-width:variables.$breakpoint){
+        //     flex-direction: column;
+        //     max-width: 90%
+        // }
         
     }
     & li{
@@ -44,20 +46,39 @@
             border-radius: 16px;
             list-style-type: none;
 
+            &:hover{
+                background-color:	rgb(230,230,250);
+
+                & i.fas{
+                    color: purple;
+                }
+            }
+
             @include box-shadow.base-shadow;
             &:hover{
             @include zoom.transform-zoom;
             }  
 
+
             & i.fas{
                 margin-right:16px;
                 color: colors.$lightgrey;
                 font-size: 20px;
-    
             }
+
+            
 
     }
 
     
 }   
+
+@media screen and (min-width:variables.$breakpoint){
+    
+    .tuto{
+        height: 15vw; 
+    }
+    
+
+}
 

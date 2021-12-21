@@ -1,0 +1,59 @@
+@use "../utils/linear-gradient.scss";
+@use "../utils/variables.scss";
+.banner img {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.resto__main {
+  margin-top: -35px;
+}
+
+.resto__main .title__lapalette {
+  padding: 32px 16px;
+  font-family: "shrikhand", "cursive";
+  border-radius: 16px 16px 0 0;
+  background-color: white;
+  position: relative;
+}
+
+.menus-grid {
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: variables) {
+  .menus-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.menus-grid > * {
+  border: 1px solid red;
+}
+
+.resto-title {
+  padding: 32px;
+}
+/*# sourceMappingURL=restaurant.css.map */

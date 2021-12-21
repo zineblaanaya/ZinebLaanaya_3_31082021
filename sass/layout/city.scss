@@ -1,13 +1,41 @@
+@use"../utils/variables.scss";
+
 .city{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background-color: #F3F3F3;
+    background-color: #eee;
     text-align: center;
     width: 100vw;
+    height: 15vw;
 
     & i{
-        font-size: 25px;
+        font-size: 18px;
     }
+
+    .paris{
+        font-weight: 400;
+        font-size: 18px;   
+
+    }
+    
+}
+
+@media screen and (min-width:variables.$breakpoint){
+    .city{
+
+        height: 8vw;
+
+        & i{
+            font-size: 25px;
+        }
+    
+        .paris{
+            font-weight: 500;
+            font-size: 30px;   
+        }
+
+    }
+
 }

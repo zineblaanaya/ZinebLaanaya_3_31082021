@@ -1,0 +1,48 @@
+@mixin gradient ($opacity:0.9) {
+    background-image: linear-gradient(
+        to top, 
+        rgba(147,86,220,$opacity),
+        rgba(255,121,218,$opacity)
+    );
+}
+
+@mixin font-awesome {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;    
+    position: absolute;
+    left: 16px;
+    top: 40%;
+    font-size: 20px;
+   
+}
+
+@mixin base-shadow {
+    box-shadow: 2px 1px 8px -3px #000000;
+}
+
+
+@mixin transform-zoom {
+    transform : scale (1.02)
+}
+
+@mixin base-button{
+    width:50vw;
+    height:7vh;
+    border-radius: 32px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    transition: transform 200ms;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    &:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+    }
+}
