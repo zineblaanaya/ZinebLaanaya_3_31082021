@@ -16,13 +16,7 @@
         flex-wrap: wrap;
         gap: 32px;
         padding: 0;
-      
-
-        // @media (min-width:variables.$breakpoint){
-        //     flex-direction: column;
-        //     max-width: 90%
-        // }
-        
+    
     }
     & li{
         position: relative;
