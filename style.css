@@ -123,7 +123,7 @@ header {
     align-items: center;
     flex-direction: column;
     margin: 0;
-    background-image: url(../../images/restaurants/restaurant1.jpg);
+    background-image: url(../images/restaurants/restaurant1.jpg);
     height: 70vw;
     background-size: cover;
     color: white;

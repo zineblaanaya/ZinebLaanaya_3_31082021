@@ -40,7 +40,6 @@ body{
     
 
 }
-    
 
 
 
@@ -48,7 +47,6 @@ body{
 
 header::before{
     @include mixins.font-awesome;
-    content: "\f060";
 }
 
 .banner img{
