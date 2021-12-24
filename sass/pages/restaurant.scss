@@ -144,11 +144,13 @@ header::before{
 
         @include linear-gradient.gradient(0.9);
 
+        &:hover .fas{
+            opacity: 1;   
+        } 
+
     }
 
-    &:hover .fas{
-        opacity: 1;   
-    } 
+   
 
 }
 
