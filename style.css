@@ -86,7 +86,7 @@ header {
   transition: transform 200ms;
   margin-top: 10px;
   cursor: pointer;
-  box-shadow: 2px 1px 8px -3px black;
+  box-shadow: 20px 0px 15px 6px #444;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .explorer button:hover {
