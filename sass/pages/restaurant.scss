@@ -142,18 +142,16 @@ header::before{
         -webkit-background-clip: text;
         opacity: 0;
         font-weight: 900;
-        // transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
 
         @include linear-gradient.gradient(0.9);
-        
-
-        
-
-        &:hover .fas{
-            opacity: 1;   
-        } 
 
     }
+
+
+    &:hover .fas{
+        opacity: 1;   
+    } 
 
    
 

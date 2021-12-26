@@ -100,11 +100,11 @@
 
                 @include gradient(0.9);
 
-                &:hover .fas{
-                    opacity: 1;
-                    transform:translateY(-50%) scale(1);
-                }
+            }
 
+            &:hover .fas{
+                opacity: 1;
+                transform:translateY(-50%) scale(1);
             }
 
         
