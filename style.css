@@ -274,7 +274,7 @@ header {
 #homepage .menus .card__description .fas:hover{
   opacity: 1;
   transform: translateY(-50%) scale(1);
-  transition: all 200ms ease-in-out;
+  transition: 3.5s 0s ease;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
@@ -445,7 +445,7 @@ body {
 }
 .resto__main .fas:hover  {
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: 3.5s 0s ease;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 

@@ -96,7 +96,7 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 opacity: 0;
-                // transition: all 200ms ease-in-out;
+                transition: opacity 3.5s 0s ease;
 
                 @include gradient(0.9);
 
@@ -108,9 +108,10 @@
                 }
 
         }
-    
 
        }
+
+
 }
 
 }
