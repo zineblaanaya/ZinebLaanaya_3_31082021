@@ -256,7 +256,7 @@ header {
 #homepage .menus .card__description p {
   font-weight: 100;
 }
-#homepage .menus .card__description i {
+#homepage .menus .card__description i  {
   font-size: 30px;
   position: absolute;
   right: 16px;
@@ -268,12 +268,14 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  /* transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); */
 }
-#homepage .menus .card__description:hover .fas {
+#homepage .menus .card__description .fas:hover{
   opacity: 1;
   transform: translateY(-50%) scale(1);
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
 @media screen and (min-width: 475px) {
