@@ -271,7 +271,7 @@ header {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
-#homepage .menus .card__description:hover .fas {
+#homepage .menus :hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1);
 }

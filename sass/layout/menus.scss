@@ -34,7 +34,7 @@
             position:absolute;
             height: 32px;
             width: 70px;
-            background-color:colors.$green;
+            background-color:$green;
             color: green;
             text-align: center;
             display: grid;
@@ -98,16 +98,16 @@
                 opacity: 0;
                 transition: all 200ms ease-in-out;
 
-                @include linear-gradient.gradient(0.9);
+                @include gradient(0.9);
+
+                &:hover .fas{
+                    opacity: 1;
+                    transform:translateY(-50%) scale(1);
+                }
 
             }
 
-            &:hover .fas{
-                opacity: 1;
-                transform:translateY(-50%) scale(1);
-            }
-
-            
+        
 
 
         }
