@@ -440,11 +440,13 @@ body {
   -webkit-background-clip: text;
   opacity: 0;
   font-weight: 900;
+  /* transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); */
+}
+.resto__main .fas:hover  {
+  opacity: 1;
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-}
-.resto__main:hover .fas {
-  opacity: 1;
 }
 
 .menus {
